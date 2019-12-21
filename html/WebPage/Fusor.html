@@ -1,0 +1,55 @@
+<!DOCTYPE>
+<html>
+<head>
+  <title> Fusor Project Blog </title>
+</head>
+<body>
+  <h1> Fusor Project </h1>
+
+  <h2> Why have a fusor? </h2>
+  <h3> Motivation for the build </h3>
+
+  <p> A fusor, or Farnsworth Fusor, is a fusion device that uses the principles of
+    Inertial Electrostatic Confinement to achieve fusion. Essentially, a fuel gas
+    is heated to very high temperatures and accelerated through a highly negtively charged
+    grid, which eventually leads to Fusion into He3, or Helium, with a large energy release.
+  </p>
+  <p> The fuel gas is usually deuterium, due to its relative stability, lack of radioactivity,
+    and fuse-ability; a Tritium fuel has a much higher cross section and efficiency of
+    fusion, but is radioactive, and much more expensive than deuterium, which can be
+    drawn off of sea water if needed.
+  </p>
+  <p> When used in concert with proper detection methods and learning devices, they are a great tool.
+    They is useful in physics for several reasons, but our motivations were the following:
+    <ul>
+      <li> It was a good beginner engineering and applied physics project.</li>
+      <li> It keeps our machining and electronics skills up. </li>
+      <li> Our school has no engineering department or useable machine shop, so this
+        is something we can make external connections to machinists and professional scientists with. </li>
+      <li> It allows us to study fusion processes, particle scattering, and particle detections methods
+        for relatively low cost; the total build over several months has a predicted cost of
+        about $500.00, rather than the exorbitant professional cost of most hadron accelerators. </li>
+      <li> It's fun!</li>
+    </ul>
+  </p>
+  <h2> The Process </h2>
+  <h3> Our build progress </h3>
+  <p> The components that matter are widely available, but we (as of this writing, May 2019) chose to
+    follow a fusor build approach outlined in Make Magazine. In turn, we ran into some minor issues
+    with the chamber glass and standoffs, so we are considering (after consulting Dr. Liam Duffy)
+    moving to a chamber cut and welded from a propane tank or similar object.
+  </p>
+  <p> To achieve the necessary voltage drop, a variac or variable step-up transformer is used.
+    We can't afford a true variac for our purposes, so we are building a 'scariac', or variac
+    using an electrolyte solution (in this case lye) and a 'crank' or manual
+    lever to step-up.
+  </p>
+  <p> After much consideration, we decided to make the build compatible with either an Arduino or
+    Raspberry Pi programmable controller, so that we could operate it without risk of vacuum chamber collapse
+    or radiation damaging our persons. The problems raised by this are those of the neutrons: most of the
+    output of this voltage, pressure, and fuel will be in the form of Thermal Neutrons. Neutrons are very
+    damaging to electronics, so we will place a 'neturon-proof' casing around the scariac, controller, and 
+    monitoring equipment.
+  </p>
+</body>
+</html>
