@@ -1,0 +1,28 @@
+<html> 
+  <head>
+    <title>Blog</title>
+    <link rel="stylesheet" id="stylesheet" href="styles/blogstyle.css">
+    <meta charset="utf-8">
+    <!---
+    <script src="script.js"></script>
+    --->
+  </head>
+  <body>
+    <div id="post_container">
+      <ul class='content'>
+        {% for i in post %}
+        <a href="{{i.link}}"> 
+        <div class='post'>
+          <li>
+            <h2 class='postTitle'>{{ i.title }}</h2>
+            <article>
+              {{i.teaser | safe}}
+            </article>
+          </li>
+        </div>
+        </a>
+        {% endfor %}
+      </ul>
+    </div>
+  </body>
+</html>
