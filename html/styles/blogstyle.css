@@ -1,0 +1,32 @@
+#post_container {
+  margin: auto 10%
+}
+
+#post_container li {
+  list-style-type: none;
+}
+
+#post_container a:link {
+  text-decoration: none;
+  color: #373737
+}
+
+#post_container a:hover {
+  text-decoration: underline;
+}
+
+.post{
+  padding: 10px;
+  margin-top: 10px;
+  outline: solid;
+  outline-color: #373737;
+}
+
+.post p {
+  text-indent: 20px;
+  margin: 0px;
+}
+
+.post h2 {
+  text-align: center;
+}
