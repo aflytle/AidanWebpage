@@ -1,4 +1,4 @@
-import markdown2
+import markdown2 as mdwn
 from datetime import datetime
 from bs4 import BeautifulSoup
 
