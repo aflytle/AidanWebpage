@@ -11,9 +11,9 @@ def send_js(path):
 
 @app.route('/post/<path:path>')
 def postReturner(path):
-    fl = f'/html/post/{path}.md'
-    fl2 = mdwn.convert(fl)
-    return fl2
+    fl = f'html/post/{path}.md'
+    post = Post(fl)
+    return post
 
 @app.route('/styles/<path:path>')
 def send_styles(path):
