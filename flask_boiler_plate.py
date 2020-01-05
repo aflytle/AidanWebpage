@@ -1,6 +1,7 @@
 from flask import Flask, request, send_from_directory, render_template
 import os
 from post import Post
+from markdwon2 import Markdown as mdwn
 
 app = Flask(__name__)
 
@@ -8,6 +9,11 @@ app = Flask(__name__)
 def send_js(path):
     return send_from_directory('html/js', path)
 
+@app.route('/post/<path:path>')
+def postReturner(path):
+    fl = f'/html/post/{path}.md'
+    fl2 = mdwn.convert(fl)
+    return fl2
 
 @app.route('/styles/<path:path>')
 def send_styles(path):
