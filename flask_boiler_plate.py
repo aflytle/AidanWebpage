@@ -13,7 +13,7 @@ def send_js(path):
 def postReturner(path):
     fl = f'html/post/{path}.md'
     post = Post(fl)
-    return post
+    return post.html
 
 @app.route('/styles/<path:path>')
 def send_styles(path):
