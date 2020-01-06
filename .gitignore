@@ -1,4 +1,3 @@
-
 # Created by https://www.gitignore.io/api/vim,emacs,python
 # Edit at https://www.gitignore.io/?templates=vim,emacs,python
 
@@ -32,6 +31,8 @@ tramp
 
 # AUCTeX auto folder
 /auto/
+
+*searchy
 
 # cask packages
 .cask/
@@ -74,6 +75,7 @@ lib64/
 parts/
 sdist/
 var/
+bin/
 wheels/
 pip-wheel-metadata/
 share/python-wheels/
@@ -81,6 +83,7 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+include/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
