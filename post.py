@@ -1,6 +1,5 @@
 from markdown2 import markdown as mdwn 
 from datetime import datetime
-from bs4 import BeautifulSoup
 
 
 class Post:
