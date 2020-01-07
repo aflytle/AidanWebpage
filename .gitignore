@@ -56,10 +56,11 @@ flycheck_*.el
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
+lib64
 __pycache__/
 *.py[cod]
 *$py.class
-
+pyvenv.cfg
 # C extensions
 *.so
 
