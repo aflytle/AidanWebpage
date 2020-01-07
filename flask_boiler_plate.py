@@ -1,7 +1,7 @@
 from flask import Flask, request, send_from_directory, render_template
 import os
 from post import Post
-from markdwon2 import Markdown as mdwn
+from markdown2 import Markdown as mdwn
 
 app = Flask(__name__)
 
