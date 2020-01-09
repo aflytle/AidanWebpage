@@ -1,8 +1,2 @@
 # TODO:
-  + Read template docs for [jenji](https://jinja.palletsprojects.com/en/2.10.x/) (This is the rendering engine that falsk uses to serve dynamic content)
-  + Write Template for 
-    + Blog Post
-  + Write better styling sheets
-  + Get a server at some point
-  + deploy
-  
+  + Write a landing page for the blog that shows a preview of each post, the title and the dates posted (html/css)
