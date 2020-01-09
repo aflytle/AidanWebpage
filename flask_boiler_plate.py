@@ -13,7 +13,7 @@ def send_js(path):
 def postReturner(path):
     fl = f'html/post/{path}.md'
     post = Post(fl)
-    return post.html
+    return render_template('blog_post.html', post=post)
 
 @app.route('/styles/<path:path>')
 def send_styles(path):
@@ -21,7 +21,7 @@ def send_styles(path):
 
 @app.route('/')
 def landing_page():
-    return send_from_directory('html/landing_page.html')
+    return send_from_directory('html', 'landing_page.html')
 
 @app.route('/blog')
 def blog_home_page():

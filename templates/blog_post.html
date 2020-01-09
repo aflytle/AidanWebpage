@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>{{ post.metadata['title'] }}</title>
+    <link rel="stylesheet" id="stylesheet" href="/styles/blogpost.css">
+    <meta charset="utf-8">
+    <!---
+    <script src="script.js"></script>
+    --->
+  </head>
+    <body>
+      <h1 class='title_header'>{{ post.metadata['title'] }}</h1>
+      <div id="post_body">
+      {{ post.html | safe }}
+      </div>
+  </body>
+  </html>

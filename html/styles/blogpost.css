@@ -1,0 +1,16 @@
+* {
+  background-color: #f4f4f4;
+  color: #373737;
+}
+.title_header {
+  text-align: center;
+  padding: 10;
+  padding-top: 20;
+}
+#post_body {
+  margin-left: 10%;
+  margin-right: 15%;
+}
+#post_body p {
+  margin: auto;
+}
