@@ -1,9 +1,5 @@
 title: Fusor Build
 date: 26-12-2019
-
-----------
-
-# Fusor Project
 ---
 
 ## Why have a fusor? 
