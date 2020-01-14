@@ -5,9 +5,11 @@ from markdown2 import Markdown as mdwn
 
 app = Flask(__name__)
 
+
 @app.route('/js/<path:path>')
 def send_js(path):
     return send_from_directory('html/js', path)
+
 
 @app.route('/post/<path:path>')
 def postReturner(path):
@@ -15,21 +17,30 @@ def postReturner(path):
     post = Post(fl)
     return render_template('blog_post.html', post=post)
 
+
 @app.route('/styles/<path:path>')
 def send_styles(path):
-	return send_from_directory('html/styles', path)
+    return send_from_directory('html/styles', path)
+
 
 @app.route('/')
 def landing_page():
     return send_from_directory('html', 'landing_page.html')
 
+
 @app.route('/blog')
 def blog_home_page():
-    return render_template('blog_home_page.html', post=[ Post(os.path.join('html/post', i)) for i in os.listdir('html/post') ])
+    return render_template('blog_home_page.html',
+                           post=[
+                               Post(os.path.join('html/post', i))
+                               for i in os.listdir('html/post')
+                           ])
+
 
 @app.route('/resume')
 def send_resume():
     pass
+
 
 if __name__ == '__main__':
     app.run()
