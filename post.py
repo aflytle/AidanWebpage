@@ -1,6 +1,6 @@
 from markdown2 import markdown as mdwn 
 from datetime import datetime
-
+import os
 
 class Post:
     def __init__(self, path_to_source : str):
@@ -15,6 +15,7 @@ class Post:
             source[:teaserlen]
             self.html = mdwn(f.read(), extras=["metadata"])
             self.metadata = self.html.metadata
+            self.link = f"{os.path.splitext(os.path.split(path_to_source)[-1])[0]}"
 
     def __str__(self) -> str:
         return self.source
