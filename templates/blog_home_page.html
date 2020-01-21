@@ -1,4 +1,4 @@
-<html> 
+<html>
   <head>
     <title>Blog</title>
     <link rel="stylesheet" id="stylesheet" href="styles/blogstyle.css">
@@ -11,16 +11,24 @@
     <div id="post_container">
       <ul class='content'>
         {% for i in post %}
-        <a href="{{i.link}}"> 
         <div class='post'>
           <li>
-            <h2 class='postTitle'>{{ i.title }}</h2>
+          <a href="{{i.link}}">
+            <h2 class='postTitle'>{{ i.metadata['title'] }}</h2>
             <article>
-              {{i.teaser | safe}}
+              <!---
+                post is a keyword argument that gets passed to the 
+                render_template function in the flask_boiler_plate file
+                this template is rendered in the blog_home_page function
+
+                the value of post is a list of Post objects, you can find 
+                the class defintion in post.py
+              --->
+              {{i.teaser | safe}}
             </article>
+          </a>
           </li>
         </div>
-        </a>
         {% endfor %}
       </ul>
     </div>
