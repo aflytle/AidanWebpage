@@ -17,15 +17,12 @@ class Post:
                 if i >= 150 and source[i] == " ":
                     break
                 teaser += source[i]
-
-            source[:teaserlen]
+            self.teaser = mdwn(teaser)
             self.html = mdwn(f.read(), extras=["metadata"])
             self.metadata = self.html.metadata
             # Link is a filename without the markdown extension
             # os.path.split('/home/ellie') => ['/home', 'ellie']
             # os.psth.splittext('/home/somfile.txt') => ['/home/somefile', 'txt']
             self.link = f"{os.path.splitext(os.path.split(path_to_source)[-1])[0]}"
-
-    def __str__(self) -> str:
-        return self.source
+            print(f"")
 
