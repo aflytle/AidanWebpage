@@ -1,2 +1,3 @@
 # TODO:
-  + Write a landing page for the blog that shows a preview of each post, the title and the dates posted (html/css)
+  + Implement tagging system for blog post, needs to be optional
+  + Accept GET args for grabbing post with a combonation of tags
